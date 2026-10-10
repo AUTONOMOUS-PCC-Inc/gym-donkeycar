@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/mirrors/assets/gym-banner.svg" alt="gym-donkeycar dependency mirror — pinned at beac6ff, 249 commits, 11 tracks, Unity simulator bridge over TCP 9091" width="100%">
+
 ### 업스트림 포크의 최신 커밋이 모든 파일을 지웠다. 그래서 복제해 왔다.
 
 AUTONOMOUS PCC의 자율주행 교육 과정이 서브모듈로 **고정(pin)** 해 쓰는<br>
@@ -15,24 +17,6 @@ AUTONOMOUS PCC의 자율주행 교육 과정이 서브모듈로 **고정(pin)** 
 
 [**⚠ 먼저 읽을 것**](#-master-브랜치는-파일이-0개다) · [**왜 있나**](#왜-이-저장소가-있나) · [**출처**](#출처) · [**어떻게 쓰이나**](#어떻게-쓰이나) · [**하지 말 것**](#하지-말-것) · [**라이선스**](#라이선스)
 
-<br>
-
-```
-tawnkramer/gym-donkeycar           원본 (upstream)
-        │  fork
-        ▼
-YUNSUNGWOONG/gym-donkeycar         강사 개인 포크
-        │                            master 끝점 0a805ad → 파일 전부 삭제  ⚠
-        │  git push --mirror  ·  2026-10-10
-        ▼
-AUTONOMOUS-PCC-Inc/gym-donkeycar   ← 이 저장소 · 기본 브랜치 aypi-pinned
-        │  서브모듈로 SHA 고정
-        ▼
-aypi-car-tutorial                  바이브코딩 캠프 실습 저장소
-```
-
-<sub>전체 이력 <strong>249 커밋</strong>을 그대로 복제했습니다. 고정 커밋 기준 파일 60개, 변경 없음.</sub>
-
 </div>
 
 ---
@@ -40,6 +24,10 @@ aypi-car-tutorial                  바이브코딩 캠프 실습 저장소
 ## ⚠ `master` 브랜치는 파일이 0개다
 
 복제 과정에서 발견한 사실입니다. 포크의 `master` 최신 커밋이 저장소의 **모든 파일을 삭제**했습니다.
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/mirrors/assets/gym-branches.svg" alt="브랜치 구조: aypi-pinned는 고정 커밋으로 파일 60개, master 끝점은 git의 빈 트리로 파일 0개. --init --recursive는 안전하고 --remote는 폴더를 비운다" width="100%">
+</div>
 
 | | 내용 |
 |---|---|
@@ -73,6 +61,10 @@ aypi-car-tutorial                  바이브코딩 캠프 실습 저장소
 
 ## 출처
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/mirrors/assets/gym-provenance.svg" alt="출처 사슬: tawnkramer 업스트림 → master 끝점이 빈 강사 포크 → AUTONOMOUS PCC 미러 → SHA로 고정하는 교육 과정 저장소" width="100%">
+</div>
+
 | 단계 | 저장소 | 비고 |
 |---|---|---|
 | 원본 | [`tawnkramer/gym-donkeycar`](https://github.com/tawnkramer/gym-donkeycar) | OpenAI Gym 환경 본체 (MIT) |
@@ -93,6 +85,11 @@ aypi-car-tutorial                  바이브코딩 캠프 실습 저장소
 ## 어떻게 쓰이나
 
 **AUTONOMOUS PCC 바이브코딩 캠프 1회차(자율주행)** 에서 Unity 시뮬레이터와 donkeycar를 잇는 계층입니다.
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/mirrors/assets/gym-dataflow.svg" alt="데이터 흐름: myconfig.py → donkeycar 주행 루프 → 이 저장소의 gym 환경 → TCP 9091 → Unity 시뮬레이터. 사람은 브라우저 8887에서 운전한다" width="100%">
+</div>
+
 학생의 `myconfig.py`가 `DONKEY_GYM = True`로 켜면 donkeycar가 이 패키지를 통해
 TCP 9091로 시뮬레이터에 붙고, 학생은 웹 UI에서 차를 운전해 주행 데이터를 모읍니다.
 
