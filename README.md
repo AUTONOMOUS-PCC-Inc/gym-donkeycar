@@ -4,7 +4,7 @@
 
 ### 네 코드와 시뮬레이터 사이를 잇는 다리.
 
-실습 저장소를 클론할 때 **같이 따라온 폴더**입니다. 따로 내려받을 필요 없습니다.<br>
+[실습 저장소](https://github.com/AUTONOMOUS-PCC-Inc/aypi-car-tutorial)를 클론할 때 **같이 따라온 폴더**입니다. 따로 내려받을 필요 없습니다.<br>
 여기는 설치할 것도 없습니다 — donkeycar가 알아서 불러다 씁니다.
 
 ![Version](https://img.shields.io/badge/gym--donkeycar-1.3.1-1E6FD9?style=for-the-badge)
@@ -83,7 +83,7 @@ donkey-waveshare-v0              donkey-minimonaco-track-v0
 ## 폴더가 비어 있다면
 
 서브모듈을 안 받았거나, **최신으로 끌어오는 명령을 썼기** 때문입니다.
-실습 저장소 맨 위에서 아래를 실행하면 돌아옵니다.
+[실습 저장소](https://github.com/AUTONOMOUS-PCC-Inc/aypi-car-tutorial) 맨 위에서 아래를 실행하면 돌아옵니다.
 
 ```bash
 git submodule update --init --recursive
